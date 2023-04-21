@@ -35,3 +35,12 @@ Hand-Manipulation-Suite Tasks [(video)](https://youtu.be/jJtBll8l_OM)
 ![Alt text](mj_envs/hand_manipulation_suite/assets/tasks.jpg?raw=false "Fetch Pole")
 
 ## 2. More coming soon
+
+# Testing different environment shifts for FrankaKitchen
+```
+from r3meval.utils.gym_env import GymEnv
+import mj_envs, gym
+
+model_path = '/iris/u/kayburns/packages/mj_envs/mj_envs/envs/relay_kitchen/assets/franka_kitchen_kettle1.xml'
+e = gym.make('kitchen_knob1_on-v3', model_path=model_path)
+```
